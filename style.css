@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body{
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+    overflow-x: clip;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+a{
+    font-family: "ubuntu", sans-serif;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
+
+
+section{
+    height: 100%;
+}
+
+h1{
+    font-family: "overpass", sans-serif;
+    font-size: 4em;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+h2, h3{
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    color: hsl(208, 49%, 24%);
+}
+
+h2{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 1.8em;
+}
+
+p{
+    font-family: "Overpass", sans-serif;
+}
+
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    padding: 3em 5em 7em 5em;
+    height: 75%;
+    border-bottom-left-radius: 7.5em;
+    background:  left / cover no-repeat url("./images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(90deg,hsl(13, 100%, 72%) 0%,hsl(353, 100%, 62%)) 90%, fixed;
+    background-size: 150%;
+
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown::after{
+    position: absolute;
+    content: url("./images/icon-arrow-light.svg");
+    top: 1px;
+    margin-left: 5px;
+}
+
+.sign-up-btn{
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(356, 100%, 66%);
+    padding: 1em 2em;
+    border-radius: 2em;
+    margin-left: 1em;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 2em;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.title-container > h2 {
+    font-size: 1.3em;
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+}
+
+.header-buttons-container{
+    margin-top: 1em;
+}
+
+.header-buttons-container > a{
+    padding: 1em 2em;
+    border-radius: 2em;
+}
+
+.start-for-free-btn{
+    margin-right: 1em;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+}
+
+.learn-more-btn{
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+}
+
+.design-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.design-section > h2{
+    align-self: center;
+}
+
+.design-section > article{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 5em;
+}
+
+.design-section-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.extendible-editor-text-container > p, .robust-content-text-container > p{
+    margin-top: 1em;
+    max-width: 60ch;
+    line-height: 1.5;
+}
+
+.design-section > article > picture{
+    position: relative;
+    bottom: 0;
+    right: -15%;
+    transform: scale(1.2);
+}
+
+.infrastructure-section{
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom-left-radius: 7.5em;
+    border-top-right-radius: 7.5em;
+    background: linear-gradient(90deg, hsl(237, 17%, 21%) 0%, hsl(237, 23%, 32%) 45%)
+}
+
+.infrastructure-section > article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: no-repeat url("./images/bg-pattern-circles.svg");
+    background-position: -225px -500px;
+    height: 400px;
+}
+
+.infrastructure-text-container > h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.infrastructure-text-container > p{
+    max-width: 50ch;
+    color: hsl(0, 0%, 100%);
+    line-height: 2;
+}
+
+.infrastructure-section > article > img{
+    position: relative;
+}
+
+
+.open-source-section > article{
+    position: relative;
+    display: flex;
+    align-items: center
+}
+
+.open-source-section > article > picture {
+    position: relative;
+    left: -15%;
+    transform: scale(1.2);
+}
+
+.free-open-simple-text > p, .powerful-tooling-text > p{
+    max-width: 50ch;
+    line-height: 1.8;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7em 0;
+    margin-top: 10em;
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 7.5em;
+}
+
+
+footer > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+footer > ul > li > a{
+    font-weight: 300;
+}
+
+footer > ul > p{
+    margin-bottom: 1em;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+
+}
