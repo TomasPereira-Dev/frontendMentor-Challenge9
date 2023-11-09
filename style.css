@@ -84,13 +84,58 @@ nav{
 
 .dropdown{
     position: relative;
+    z-index: 0;
 }
+
+.dropdown > a {
+    padding-bottom: 25px;
+    opacity: .75;
+} 
 
 .dropdown::after{
     position: absolute;
     content: url("./images/icon-arrow-light.svg");
     top: 1px;
     margin-left: 5px;
+    z-index: 1;
+    opacity: .75;
+}
+
+.dropdown:hover::after{
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+.dropdown:hover > a{
+    text-decoration: underline hsl(0, 0%, 100%) 2px;
+    opacity: 1;
+
+}
+
+.dropdown:hover > .dropdown-list {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 4em 2em 1.5em;
+    border-radius: 5px;
+    gap: 1em;
+}
+
+.dropdown-list{
+    display: none;
+    position: absolute;
+    left: -1.5em;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+}
+
+.dropdown-list > li > a{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: hsl(240, 10%, 16%);
+}
+
+.dropdown-list > li > a:hover{
+    font-weight: 700;
 }
 
 .sign-up-btn{
@@ -213,7 +258,7 @@ main{
 .open-source-section > article{
     position: relative;
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 .open-source-section > article > picture {
@@ -222,8 +267,15 @@ main{
     transform: scale(1.2);
 }
 
+.open-source-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
+}
+
 .free-open-simple-text > p, .powerful-tooling-text > p{
     max-width: 50ch;
+    margin-top: 1em;
     line-height: 1.8;
 }
 
