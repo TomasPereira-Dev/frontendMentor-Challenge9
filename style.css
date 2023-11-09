@@ -104,11 +104,13 @@ nav{
 .dropdown:hover::after{
     transform: rotate(180deg);
     opacity: 1;
+    transition: 100ms ease;
 }
 
 .dropdown:hover > a{
     text-decoration: underline hsl(0, 0%, 100%) 2px;
     opacity: 1;
+    transition: 100ms ease;
 
 }
 
@@ -118,6 +120,7 @@ nav{
     padding: 2em 4em 2em 1.5em;
     border-radius: 5px;
     gap: 1em;
+    transition: 100ms ease;
 }
 
 .dropdown-list{
@@ -144,6 +147,20 @@ nav{
     padding: 1em 2em;
     border-radius: 2em;
     margin-left: 1em;
+}
+
+.sign-up-btn:hover{
+    background-color:  hsl(355, 90%, 74%);
+    color: hsl(0, 0%, 100%);
+    transition: 100ms ease;
+}
+
+.login-btn{
+    opacity: .75;
+}
+
+.login-btn:hover{
+    opacity: 1;
 }
 
 .title-container{
@@ -176,8 +193,20 @@ nav{
     color: hsl(356, 100%, 66%);
 }
 
+.start-for-free-btn:hover{
+    background-color:  hsl(355, 90%, 74%);
+    color: hsl(0, 0%, 100%);
+    transition: 100ms ease;
+}
+
 .learn-more-btn{
     border: 1px solid hsl(0, 0%, 100%);
+}
+
+.learn-more-btn:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+    transition: 100ms ease;
 }
 
 main{
@@ -297,7 +326,12 @@ footer > ul{
 
 footer > ul > li > a{
     font-weight: 300;
+    opacity: .75;
 }
+
+footer > ul > li > a:hover{
+    text-decoration: underline 2px hsl(0, 0%, 100%);
+} 
 
 footer > ul > p{
     margin-bottom: 1em;
