@@ -1,0 +1,126 @@
+@media(max-width: 425px) {
+    header{
+        padding: 2em;
+        gap: 2em;
+        background-size: 350%;
+        background-position: center;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+    .title-container{
+        align-items: center;
+        line-height: 1.5;
+    }
+
+    .title-container > h1{
+        font-size: 2em;
+        max-width: 14ch;
+    }
+
+    .title-container > h2{
+        font-size: 1.2em;
+        max-width: 25ch;
+    }
+
+    .header-buttons-container > a{
+        padding: .8em 1.2em;
+    }
+    
+    main{
+        gap: 5em;
+    }
+    
+
+    .design-section > article{
+        flex-direction: column-reverse;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 2em;
+        gap: 2em;
+    }
+
+    .design-section > article h3{
+        max-width: 15ch;
+    }
+
+    .design-section > article > picture{
+        position: static;
+        transform: scale(1);
+    }
+
+    .extendible-editor-text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .robust-content-text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .extendible-editor-text-container > p, .robust-content-text-container > p {
+        max-width: 30ch;
+    }
+
+    .infrastructure-section > article{
+        flex-direction: column;
+        justify-content: space-between;
+        background-size: contain;
+        background-position: top;
+        height: 100%;
+        text-align: center;
+        border-radius: 0 100px;
+        margin-bottom: 4em;
+    }
+
+    .infrastructure-text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infrastructure-text-container  > p {
+        max-width: 30ch;
+    }
+
+    .open-source-section > article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .open-source-section > article > picture{
+        position: static;
+        transform: scale(1);
+    }
+
+    .free-open-simple-text, .powerful-tooling-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .free-open-simple-text > p, .powerful-tooling-text > p{
+        max-width: 29ch;   
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        padding: 4em 0;
+        margin-top: 4em;
+        text-align: center;
+    }
+
+    footer > .logo-container{
+        margin-bottom: 2em;
+    }
+}

@@ -82,8 +82,13 @@ nav{
     gap: 2em;
 }
 
+nav > img{
+    margin-right: 2em;
+}
+
 .dropdown{
     position: relative;
+    margin-right: 1em;
     z-index: 0;
 }
 
@@ -129,6 +134,8 @@ nav{
     left: -1.5em;
     background-color: hsl(0, 0%, 100%);
     margin-top: 20px;
+    z-index: 2;
+    box-shadow: 0 5px 5px hsl(208, 49%, 24%, .1);
 }
 
 .dropdown-list > li > a{
